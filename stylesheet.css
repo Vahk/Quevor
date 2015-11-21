@@ -2,6 +2,7 @@
 html, body {
     		height: 100%;
     		margin: 0;
+        -webkit-font-smoothing: antialiased;
     	}
 
     	#wrapper {
@@ -12,9 +13,17 @@ div.header{
     /*max-height: 400px;*/
     height: 720px;
     /*background-image:url(header.jpg); */
-    background-color: cadetblue;
+    
     align-content: center;
-    background-size: cover;    
+    background-size: cover;  
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: 1;
+    /*BACKGROUND GRADIENTS*/
+     background: -webkit-linear-gradient(#4C69A8, #78B2FF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#4C69A8, #78B2FF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#4C69A8, #78B2FF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#4C69A8, #78B2FF); /* Standard syntax */
 }
 h1.quevor{
     font-family:monospace;
@@ -40,9 +49,9 @@ nav
     font-family: monospace;
     font-size: 20px;
     align-items: center;
-    background-color: azure;  
     display: block;
-    
+    height: 30px;
+    padding-top: 15px;
 }
 ul{
     position: relative;
@@ -51,22 +60,39 @@ ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    margin-right: 5%;
 }
-ul > a{
-    display: block;
+a{
+    display: relative;
     width: 60px;
     text-decoration: none;
     line-height: 2em;
-    background-color: black;
-
+    font-family: monospace;
+    color:aliceblue;
+  
+   
+   
 }
-a.button:hover, a.button:active {
-    background-color: white;
-    color: black;
-}
+    
 li{
     display: inline;
     float: right;
+    box-shadow: 2px;
+      border: 5px;
+    border-color: white;
+    list-style-position:inside; 
+    border: 3px solid white;
+    border-radius: 12px;
+    margin: 0 0 5px 8px;
+    padding: 2px 10px ;
+}
+li:hover{
+     background-color: #78B2FF;
+    -webkit-transition: background-color linear .8s;
+    -moz-transition: background-color linear .8s;
+    -o-transition: background-color linear .8s;
+    transition: background-color linear .8s;
 }
 
 div.signup{
@@ -86,7 +112,7 @@ input{
     font-size: 16px;
 }
 input[type="submit"]{
-    background:cadetblue;; 
+    background:#4C69A8;; 
     width: 80px;
     height: 35px;
     color:white;
@@ -94,7 +120,7 @@ input[type="submit"]{
 div.map{
     width: 100%;
     height: 800px;
-    background-color: black;
+    background-color: brown;
 }
 
 #map {
