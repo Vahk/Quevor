@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300italic);
+html, body {
+    		height: 100%;
+    		margin: 0;
+    	}
+
+    	#wrapper {
+    		min-height: 100%; 
+    	}
+
+div.header{
+    /*max-height: 400px;*/
+    height: 720px;
+    /*background-image:url(header.jpg); */
+    background-color: cadetblue;
+    align-content: center;
+    background-size: cover;    
+}
+h1.quevor{
+    font-family:monospace;
+    font-size: 130px;
+    color:black;
+    padding-top: 60px;
+    text-align: center;
+}
+
+h2{
+    margin-top: -120px;
+    color:white;
+    font-family:Merriweather;
+    text-align: center;
+}
+div.form{
+    
+}
+
+
+nav
+{   
+    font-family: monospace;
+    font-size: 20px;
+    align-items: center;
+    background-color: azure;  
+    display: block;
+    
+}
+ul{
+    position: relative;
+    padding-top:5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul > a{
+    display: block;
+    width: 60px;
+    text-decoration: none;
+    line-height: 2em;
+    background-color: black;
+
+}
+a.button:hover, a.button:active {
+    background-color: white;
+    color: black;
+}
+li{
+    display: inline;
+    float: right;
+}
+
+div.signup{
+    background-color:#80BCA3;
+    text-align: center;
+    font-family: Merriweather;
+    padding-top: 15px;
+}
+h1.lesser-header{
+    font-family: Merriweather
+        
+}
+
+input{
+    border: 0;
+    padding: 8px;
+    font-size: 16px;
+}
+input[type="submit"]{
+    background:cadetblue;; 
+    width: 80px;
+    height: 35px;
+    color:white;
+}
+div.map{
+    width: 100%;
+    height: 800px;
+    background-color: black;
+}
+
+#map {
+    width: 60%;
+    height: 500px;
+}
